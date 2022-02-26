@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$primary: #023a50;
+$secondary: #00626e;
+$positive: #1976d2;
+$accent: #ec6662;
+$warning: #fdcb6e;
+$danger: #d63031;
+$white: #ffffff;
+$light: #dfe6e9;
+$grey: #636e72;
+$dark: #1e272e;
+
+html {
+  font-size: 10px;
+  font-family: Roboto, 'Courier New', Courier, monospace;
+  color: $dark;
+}
+
+.profile-header {
+  background-color: $primary;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  &__nav {
+    display: flex;
+    width: 600px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  &__logo {
+    flex: 1;
+    color: $white;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  ul {
+    list-style: none;
+    color: $light;
+    display: flex;
+    li {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+      a,
+      :active :visited {
+        text-decoration: none;
+        color: $light;
+        font-size: 1.6rem;
+        padding: 0.5rem 1rem;
+        border: 0.1rem solid lighten($primary, 5%);
+        border-radius: 0.3rem;
+        transition: ease-in 0.3s;
+        &:hover {
+          background-color: lighten($primary, 10%);
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.profile-main {
+  a {
+    text-decoration: none;
+    color: $white;
+    background-color: $positive;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+  }
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  margin: 3rem auto;
+  font-size: 1.6rem;
+  &__image {
+    width: 150px;
+    height: 150px;
+    background-image: url('../images/gabriel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    border-radius: 50%;
+  }
+  &__info {
+    margin: 1rem 0 2rem 0;
+    padding: 2rem;
+    background-color: $primary;
+    text-align: center;
+    .name {
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: $white;
+    }
+    .title {
+      color: $light;
+    }
+  }
+  ul {
+    list-style: none;
+    li {
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+.btn {
+  &-favorites {
+    font-size: large;
+    background-color: yellow;
+    border: none;
+    padding: 1rem 2rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba($dark, 0.3);
+    border-radius: 0.5rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.footer {
+  font-size: 1.4rem;
+  text-align: center;
+}
