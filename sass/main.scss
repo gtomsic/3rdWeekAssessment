@@ -131,3 +131,27 @@ html {
   font-size: 1.4rem;
   text-align: center;
 }
+
+@media only screen and (max-width: 599px) {
+  .profile-header {
+    min-height: 7rem;
+    &__nav {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 0;
+    }
+    &__logo {
+      margin-bottom: 1rem;
+    }
+  }
+  .profile-main {
+    width: 100%;
+  }
+  .btn {
+    display: flex;
+    flex-direction: column;
+    &-favorites {
+      margin: 0.5rem;
+    }
+  }
+}

@@ -117,4 +117,30 @@ html {
 .footer {
   font-size: 1.4rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 599px) {
+  .profile-header {
+    min-height: 7rem;
+  }
+  .profile-header__nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .profile-header__logo {
+    margin-bottom: 1rem;
+  }
+
+  .profile-main {
+    width: 100%;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-favorites {
+    margin: 0.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */
