@@ -8,8 +8,8 @@
 $primary: #023a50;
 $secondary: #00626e;
 $positive: #1976d2;
-$accent: #ec6662;
-$warning: #fdcb6e;
+$accent: #88304d;
+$warning: #dd544f;
 $danger: #d63031;
 $white: #ffffff;
 $light: #dfe6e9;
@@ -113,19 +113,19 @@ html {
   }
 }
 
-.btn {
-  &-favorites {
-    font-size: large;
-    background-color: yellow;
-    border: none;
-    padding: 1rem 2rem;
-    box-shadow: 0.1rem 0.1rem 0.2rem rgba($dark, 0.3);
-    border-radius: 0.5rem;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-}
+// .btn {
+//   &-favorites {
+//     font-size: large;
+//     background-color: yellow;
+//     border: none;
+//     padding: 1rem 2rem;
+//     box-shadow: 0.1rem 0.1rem 0.2rem rgba($dark, 0.3);
+//     border-radius: 0.5rem;
+//     &:hover {
+//       cursor: pointer;
+//     }
+//   }
+// }
 
 .footer {
   font-size: 1.4rem;
